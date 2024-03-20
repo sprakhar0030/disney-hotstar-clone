@@ -1,0 +1,110 @@
+#cardStack{
+    position: relative;
+    z-index: 2;
+    top: 30rem;
+    margin-left: 0px;
+    padding-left: 110px;
+    background-color: rgb(37, 40, 51);
+    background: linear-gradient( to bottom, transparent 5px, rgb(0, 0, 0) 100px);
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+
+
+
+.imgCard{
+    min-width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    display: flex;
+    padding: 20px 0 20px 15px;
+    background-color: rgba(0, 0, 0, 0);
+
+    > img {
+        height: 250px;
+        width: 170px;
+        padding: 5px;
+        border-radius: 15px;
+        cursor: pointer;
+        background-color: rgba(0, 0, 0, 0);
+        transition: transform 1s; 
+    }
+
+    > img:hover{
+        transform: scale(1.2);
+        z-index: 1;
+    }
+    >h1{
+        color: white;
+        z-index: -10;
+    }
+}
+
+.imgCard::-webkit-scrollbar{
+    display: none;
+}
+
+.cardsHeading{
+    color: White;
+    margin: 20px 0px 20px 20px;
+    font-size: 25px;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: -10;
+}
+
+#cardHolder{
+    display: flex;
+    justify-content: space-evenly;
+    height: 200px;
+    width: 100%;
+
+}
+
+#cards {
+    min-height: 200px;
+    min-width: 100px;
+}
+
+#cardContainer{
+    background-color: rgba(0, 0, 0, 0);
+}
+
+@media (max-width:600px){
+    #cardStack{
+        position: relative;
+        top: -30px;
+        padding-left: 0px;
+        background-color: black;
+        min-height: fit-content;
+    }
+
+    .imgCard{
+        min-width: 100%;
+        overflow-x: auto;
+        white-space: nowrap;
+        display: flex;
+        padding: 20px 0 20px 0px;
+        background-color: rgba(0, 0, 0, 0);
+    
+        > img {
+            height: 200px;
+            width: 150px;
+            padding: 5px;
+            border-radius: 15px;
+            cursor: pointer;
+            background-color: rgba(0, 0, 0, 0);
+            transition: transform 1s; 
+        }
+    }
+
+    .cardsHeading{
+        color: White;
+        margin: 20px 0px 0px 20px;
+        font-size: 15px;
+        position: relative;
+        background-color: rgba(0, 0, 0, 0);
+        z-index: -10;
+    }
+    
+}

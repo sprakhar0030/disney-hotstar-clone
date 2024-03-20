@@ -1,0 +1,13 @@
+#footer{
+    display: flex;
+    position: relative;
+    margin-left: 107px;
+    padding: 20px 20px 10px 20px;
+    top: 570px;
+    z-index: 2;
+    background-color: #0f1014;
+
+    > h1 {
+        color: white;
+    }
+}
